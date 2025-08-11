@@ -1,0 +1,4 @@
+
+Ñ	java:S116"QRename this field "RoleId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 3354c9e579b7d61f66e8ff297be4feaeh
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b bcefb15172a1f0bfe760664381886d3ch
+à	java:S116"URename this field "EmployeeId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 4ed13c614679f539396f93722f798e39h

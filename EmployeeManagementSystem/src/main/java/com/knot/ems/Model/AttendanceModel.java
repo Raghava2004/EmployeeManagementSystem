@@ -1,0 +1,110 @@
+package com.knot.ems.Model;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import com.knot.ems.Dto.PunchInDto;
+import com.knot.ems.Dto.PunchOutDto;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "attendance")
+public class AttendanceModel {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "attendance_id")
+	private Integer AttendanceId;
+	@Column(name = "emp_id")
+	private Integer EmpId;
+	@Column(name = "t_date")
+	private LocalDate currentdate;
+	@Column(name = "reporting_status")
+	private String reportingStatus;
+	@Column(name = "punch_in")
+	private LocalTime punchIn;
+	@Column(name = "punch_out")
+	private LocalTime punchOut;
+	@Column(name = "total_hours")
+	private Double totalHours;
+
+	
+	public AttendanceModel(Integer attendanceId, Integer empId, LocalDate currentdate, String reportingStatus,
+			LocalTime punchIn, LocalTime punchOut, Double totalHours) {
+		super();
+		AttendanceId = attendanceId;
+		EmpId = empId;
+		this.currentdate = currentdate;
+		this.reportingStatus = reportingStatus;
+		this.punchIn = punchIn;
+		this.punchOut = punchOut;
+		this.totalHours = totalHours;
+	}
+	public LocalTime getPunchIn() {
+		return punchIn;
+	}
+	public void setPunchIn(LocalTime punchIn) {
+		this.punchIn = punchIn;
+	}
+	public LocalTime getPunchOut() {
+		return punchOut;
+	}
+	public void setPunchOut(LocalTime punchOut) {
+		this.punchOut = punchOut;
+	}
+	public Double getTotalHours() {
+		return totalHours;
+	}
+	public void setTotalHours(Double totalHours) {
+		this.totalHours = totalHours;
+	}
+	
+	public AttendanceModel() {
+		super();
+	}
+	
+	public AttendanceModel(PunchInDto punchInDto) {
+		this.EmpId=Integer.parseInt( punchInDto.getEmpId());
+		this.currentdate=LocalDate.now();
+		this.punchIn=LocalTime.now();			
+	}
+	
+	
+	public AttendanceModel(PunchOutDto punchOutDto) {
+		this.EmpId=Integer.parseInt( punchOutDto.getEmpId());
+		this.currentdate=LocalDate.now();
+		this.punchOut=LocalTime.now();
+	}
+	public Integer getAttendanceId() {
+		return AttendanceId;
+	}
+	public void setAttendanceId(Integer attendanceId) {
+		AttendanceId = attendanceId;
+	}
+	public Integer getEmpId() {
+		return EmpId;
+	}
+	public void setEmpId(Integer empId) {
+		EmpId = empId;
+	}
+	public LocalDate getCurrentdate() {
+		return currentdate;
+	}
+	public void setCurrentdate(LocalDate currentdate) {
+		this.currentdate = currentdate;
+	}
+	public String getReportingStatus() {
+		return reportingStatus;
+	}
+	public void setReportingStatus(String reportingStatus) {
+		this.reportingStatus = reportingStatus;
+	}
+	
+		
+}

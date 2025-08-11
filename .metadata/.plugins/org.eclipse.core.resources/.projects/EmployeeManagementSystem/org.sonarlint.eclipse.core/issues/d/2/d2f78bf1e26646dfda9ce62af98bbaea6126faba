@@ -1,0 +1,4 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b bcefb15172a1f0bfe760664381886d3ch
+É	java:S116"PRename this field "EmpId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 9f1347c18aae384fa36d6a4fe85fa531h
+â	java:S116"VRename this field "ProjectRole" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b ebad05e185b819d9cfec425aa83e28efh

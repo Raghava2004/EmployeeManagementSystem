@@ -1,0 +1,5 @@
+
+А	java:S112"FDefine and throw a dedicated exception instead of using a generic one.8бс ЃГ3b b0d4998a26f5b5742ad38c4af8817e32h
+b
+java:S1125"'Remove the unnecessary boolean literal.8бс ЃГ3b b326b5062b2f0e69046810717534cb09h
+Н	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 1155d96b62714420368a3954ba3b63d7h

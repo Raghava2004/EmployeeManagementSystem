@@ -1,0 +1,8 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 79c366dd2bd0c56332e68df8a59c60d2h
+ë
+java:S3305"]Inject this field value directly into "authenticationProvider", the only method that uses it.b 010ac1b919b408103fdf7e3c0ac41c10h
+é
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.b 6e5445b12e24dc19809988868b93c90dh
+Ä
+java:S1612!"LReplace this lambda with method reference 'AbstractHttpConfigurer::disable'.b b4d414045ddc319a7da99472065d3b35h

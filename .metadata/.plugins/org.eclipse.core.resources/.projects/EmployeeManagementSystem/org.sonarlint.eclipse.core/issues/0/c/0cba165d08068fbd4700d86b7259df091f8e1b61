@@ -1,0 +1,13 @@
+
+Ä	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.8÷•¡≤É3b 15452a9b0f2356c3dabe720a67728b3dh
+e
+java:S1905Å")Remove this unnecessary cast to "String".8«·¬ﬂÉ3b eb75b761c18412e155d3303ad5007318h
+e
+java:S1905ä")Remove this unnecessary cast to "String".8«·¬ﬂÉ3b eb75b761c18412e155d3303ad5007318h
+e
+java:S1905á")Remove this unnecessary cast to "String".8«·¬ﬂÉ3b eb75b761c18412e155d3303ad5007318h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 1155d96b62714420368a3954ba3b63d7h
+Ä	java:S112g"FDefine and throw a dedicated exception instead of using a generic one.8÷•¡≤É3b 15452a9b0f2356c3dabe720a67728b3dh
+Ä	java:S112M"FDefine and throw a dedicated exception instead of using a generic one.8÷•¡≤É3b 15452a9b0f2356c3dabe720a67728b3dh
+Ä	java:S112R"FDefine and throw a dedicated exception instead of using a generic one.8÷•¡≤É3b 15452a9b0f2356c3dabe720a67728b3dh
+Ä	java:S112Y"FDefine and throw a dedicated exception instead of using a generic one.8÷•¡≤É3b 15452a9b0f2356c3dabe720a67728b3dh

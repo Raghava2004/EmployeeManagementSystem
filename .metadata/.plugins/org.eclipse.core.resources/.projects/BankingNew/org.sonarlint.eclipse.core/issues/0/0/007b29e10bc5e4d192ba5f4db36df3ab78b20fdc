@@ -1,0 +1,11 @@
+
+‘	java:S116"WRename this field "CustomerName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8°ğİÎş2b 62d720dfe06dc42fe4f75be9824cbef7h
+‘	java:S116"WRename this field "CustomerMail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8°ğİÎş2b 4feca86b36fe010726bf2280fe2aa4f0h
+	java:S116"URename this field "CustomerId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8°ğİÎş2b 4940eba01af6849a71c3f24d6c67315eh
+m
+java:S1135!"2Complete the task associated to this TODO comment.8°ğİÎş2b c4f57efa199bc27c4da51b24ff6ab91fh
+	java:S116"TRename this field "CreatedAt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8°ğİÎş2b 46d295c8a97befd247d2d634ac8cc4b3h
+m
+java:S1135."2Complete the task associated to this TODO comment.8“äéÎş2b c4f57efa199bc27c4da51b24ff6ab91fh
+”	java:S116"ZRename this field "CustomerAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8°ğİÎş2b 1b4b031005f93d02d887e7d66efb653bh
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 3fdda60a87537ba86c8b08cc2422af88h

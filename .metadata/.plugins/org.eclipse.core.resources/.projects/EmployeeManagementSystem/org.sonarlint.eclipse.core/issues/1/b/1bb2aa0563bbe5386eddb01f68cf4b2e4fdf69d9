@@ -1,0 +1,10 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b ef5ca32b6fa8757ab1990107a8113ffbh
+ì	java:S116	"YRename this field "ComputedSalary" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8Ü‹É±É3b f4ab76accb0e7c02948f674b3befd48bh
+ä	java:S116"PRename this field "EmpId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8¢ÉÑ±É3b 9f1347c18aae384fa36d6a4fe85fa531h
+ê	java:S116"VRename this field "HoursWorked" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8¢ÉÑ±É3b 6e4b20f9c1411eeedcfd46f80ffa4417h
+è	java:S116"URename this field "PayPerHour" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8Ç‚ã±É3b c642b6c22638682d327112b12875f8abh
+m
+java:S1135"2Complete the task associated to this TODO comment.8Ç‚ã±É3b c4f57efa199bc27c4da51b24ff6ab91fh
+m
+java:S1135"2Complete the task associated to this TODO comment.8ΩÉî±É3b c4f57efa199bc27c4da51b24ff6ab91fh

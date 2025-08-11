@@ -1,0 +1,7 @@
+
+ˆ	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8òàÔÆ€3b 40ca1d5cdf7e2ee69f8b25d713862f5dh
+ˆ	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8òàÔÆ€3b 31c4b9d5385aff792b1badaca9430babh
+‘	java:S116"WRename this field "joining_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8ËÓÆ€3b d3ebc10f3fa8db3ac1260f75571cbf14h
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 2175c0f9a1bd07c82093be6c3fbb26e1h
+m
+java:S1135"2Complete the task associated to this TODO comment.8òàÔÆ€3b c4f57efa199bc27c4da51b24ff6ab91fh

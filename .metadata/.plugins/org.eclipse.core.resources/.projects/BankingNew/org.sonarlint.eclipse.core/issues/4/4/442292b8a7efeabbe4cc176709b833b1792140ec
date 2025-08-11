@@ -1,0 +1,5 @@
+
+~	xml:S1120 "DMake this line start after 2 spaces to indent the code consistently.8”…Žˆƒ3b 8f537867e14e6482c864b22a78fcb82ah
+’	xml:S3419"_Update this "groupId" to match the provided regular expression: '(com|org)(\.[a-z][a-z-0-9]*)+'b e56f670b24042ea58b8e17b0cb5b8d8eh
+‡	xml:S3420"TUpdate this "artifactId" to match the provided regular expression: '[a-z][a-z-0-9]+'b 8091cee2cc903b4717c4c4dd54d5b123h
+wxml:S105"EReplace all tab characters in this file by sequences of white-spaces.b d41d8cd98f00b204e9800998ecf8427eh

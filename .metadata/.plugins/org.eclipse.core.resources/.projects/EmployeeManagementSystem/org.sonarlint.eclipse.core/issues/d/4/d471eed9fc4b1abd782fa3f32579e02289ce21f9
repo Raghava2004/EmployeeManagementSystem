@@ -1,0 +1,11 @@
+
+Å	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 7cc8166b9ccaa74511a8c52b55df6dbbh
+Å	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 303708e3acc8f0e74e1ab0e973335ca0h
+Å	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b b993c6291b5c5369d66976ba4f8ce1ebh
+ç	java:S116"ZRename this field "employee_mailId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 387c000e038012e6ac1e527518585539h
+â	java:S116"VRename this field "employee_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b dcc97e32ee2155cd3544413ac8b6f685h
+Å	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 6ee428ec265d0c2301b64aae6cefcfcfh
+Å	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b fe11c91a6ff56fac44aeab2ec2891b99h
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b bcefb15172a1f0bfe760664381886d3ch
+Å	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 9024b22e47a42ce72d6aa7eaf65995deh
+ã	java:S116"XRename this field "employee_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b d0ed89eba8afa2aaf0e53ed2bdac0ea0h

@@ -1,0 +1,9 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b ef5ca32b6fa8757ab1990107a8113ffbh
+ô	java:S116"_Rename this field "reporting_manager_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8¸∑ÏπÉ3b 987449ceb44cc92fcee1d109aaebbba9h
+m
+java:S1135"2Complete the task associated to this TODO comment.8¸∑ÏπÉ3b c4f57efa199bc27c4da51b24ff6ab91fh
+à	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8¸∑ÏπÉ3b c0756f49b2ef7f544cd757e3a929eb0eh
+à	java:S100d"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8¸∑ÏπÉ3b 169272aa8ed628fbfca19590b1170784h
+m
+java:S1135&"2Complete the task associated to this TODO comment.8©Ú¥∫É3b c4f57efa199bc27c4da51b24ff6ab91fh

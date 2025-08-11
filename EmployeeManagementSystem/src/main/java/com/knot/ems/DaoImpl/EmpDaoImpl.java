@@ -1,0 +1,143 @@
+package com.knot.ems.DaoImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.knot.ems.Dao.EmpDao;
+import com.knot.ems.Model.DepartmentModel;
+import com.knot.ems.Model.EmpProjectsModel;
+import com.knot.ems.Model.EmpRolesModel;
+import com.knot.ems.Model.EmployeeModel;
+import com.knot.ems.Model.ProjectsModel;
+import com.knot.ems.Model.RolesModel;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
+
+@Repository
+public class EmpDaoImpl implements EmpDao{
+	@Autowired
+	EntityManager entityManager;
+
+	@Override
+	public void saveDepartment(DepartmentModel departmentModel) {
+		entityManager.merge(departmentModel);
+	}
+
+	@Override
+	public void saveRoles(RolesModel roles) {
+		entityManager.merge(roles);
+		
+	}
+
+	@Override
+	public void saveEmployeeData(EmployeeModel empModel) {
+		entityManager.merge(empModel);		
+	}
+
+	@Override
+	public List<EmployeeModel> getAllEmployees() {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from employees ");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),EmployeeModel.class);
+		 @SuppressWarnings("unchecked")
+		List<EmployeeModel> resultList = nativeQuery.getResultList();
+		return resultList;
+	}
+
+	@Override
+	public DepartmentModel getDepartmentById(Integer deptId) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from departments where dept_id=:id ");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),DepartmentModel.class);
+		nativeQuery.setParameter("id", deptId);
+		@SuppressWarnings("unchecked")
+		List<DepartmentModel> resultList = nativeQuery.getResultList();
+		return resultList.get(0);
+		
+	}
+
+	@Override
+	public EmpRolesModel getEmpRolesByEmpId(String empId) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from employee_roles where emp_id=:id");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),EmpRolesModel.class);
+		nativeQuery.setParameter("id", empId);
+		try {
+			
+		
+		EmpRolesModel singleResult = (EmpRolesModel) nativeQuery.getSingleResult();
+		return singleResult;}
+		catch(Exception e) {
+			return null;
+		}
+	}
+	@Override
+	public RolesModel getRolesByRoleId(Integer roleId) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from roles where roleid=:id");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),RolesModel.class);
+		nativeQuery.setParameter("id", roleId);
+		RolesModel singleResult = (RolesModel) nativeQuery.getSingleResult();
+		return singleResult;
+		
+	}
+
+	@Override
+	public <T> EmployeeModel getEmployeeById(T id) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from employees where emp_id=:id");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),EmployeeModel.class);
+		nativeQuery.setParameter("id", id);
+		EmployeeModel singleResult = (EmployeeModel) nativeQuery.getSingleResult();
+		return singleResult;
+	}
+
+
+
+	@Override
+	public EmpProjectsModel getEmployeeProjectsByEmpId(String Id) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from employee_projects where emp_id=:id");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),EmpProjectsModel.class);
+		nativeQuery.setParameter("id", Id);
+		EmpProjectsModel singleResult = (EmpProjectsModel) nativeQuery.getSingleResult();
+		return singleResult;
+	}
+
+	@Override
+	public ProjectsModel getProjectByProjId(Integer projId) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select * from projects where proj_id=:id");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString(),ProjectsModel.class);
+		nativeQuery.setParameter("id", projId);
+		ProjectsModel singleResult = (ProjectsModel) nativeQuery.getSingleResult();
+		return singleResult;
+	}
+
+	@Override
+	public Integer getRoleIdByRole(String role) {
+		StringBuilder sb=new StringBuilder();
+		sb.append("select roleid from roles where role=:role");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString());
+		nativeQuery.setParameter("role", role);
+		return (Integer) nativeQuery.getSingleResult();
+				
+	}
+
+	@Override
+	public List<Integer> getEmpByRoleId(Integer roleIdByRole) {
+		// TODO Auto-generated method stub
+		StringBuilder sb=new StringBuilder();
+		sb.append("select emp_id from employee_roles where roleid=:role");
+		Query nativeQuery = entityManager.createNativeQuery(sb.toString());
+		nativeQuery.setParameter("role", roleIdByRole);
+		@SuppressWarnings("unchecked")
+		List<Integer >resultList = nativeQuery.getResultList();
+		return resultList;
+	}
+
+	
+}
